@@ -37,7 +37,8 @@
 	const map = L.map('map').setView([51.5067866, -0.0825625], 13);
 
 	const tiles = L.tileLayer('https://colouring.london/tiles/planning_applications_status_all/{z}/{x}/{y}.png', {
-		maxZoom: 19,
+		maxZoom: 18,
+		minZoom: 9,
 		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 	}).addTo(map);
 
